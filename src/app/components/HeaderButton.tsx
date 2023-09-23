@@ -1,7 +1,7 @@
 function HeaderButton({ iconName }: { iconName: string }) {
   return (
-    <button>
-      <img src={`./${iconName}.svg`} />
+    <button className="p5 hover:scale-125">
+      <img src={`./${iconName}.svg`} width={30} height={30} />
     </button>
   );
 }
