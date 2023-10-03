@@ -1,6 +1,6 @@
 export enum HeaderButtons {
-  FRIDGE = "fridge",
-  BLOG = "blog",
-  FAVORITES = "favorites",
-  PROFILE = "profile",
+  FRIDGE = 'fridge',
+  BLOG = 'blog',
+  FAVORITES = 'favorites',
+  PROFILE = 'profile',
 }

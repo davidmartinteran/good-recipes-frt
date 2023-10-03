@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 function HeaderInput() {
   return (
     <div className="flex align-bottom gap-2">
@@ -8,4 +8,4 @@ function HeaderInput() {
   )
 }
 
-export default HeaderInput;
+export default HeaderInput
