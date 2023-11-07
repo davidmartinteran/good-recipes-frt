@@ -1,12 +1,12 @@
-import FilterField from "./FilterField"
+import FilterField from './FilterField'
+import InputRange from './InputRange'
 
 function FilterSection() {
   return (
-    <aside>
+    <aside className="max-w-xs">
       <form>
         <FilterField label="Calorías máximas">
-          <input type='range'min={0} max={50}
-          />
+          <InputRange />
         </FilterField>
       </form>
     </aside>

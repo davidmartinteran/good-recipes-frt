@@ -1,6 +1,6 @@
-import HeaderButton from "./HeaderButton";
-import HeaderInput from "./HeaderInput";
-import { HeaderButtons } from "../enums/enums";
+import HeaderButton from './HeaderButton'
+import HeaderInput from './HeaderInput'
+import { HeaderButtons } from '../enums/enums'
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
         <HeaderButton iconName={HeaderButtons.PROFILE} />
       </section>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
