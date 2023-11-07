@@ -5,7 +5,7 @@ type Props = {
 function FilterField({label, children}: Props) {
   return (
     <div className="flex flex-col">
-      <label>{label}</label>
+      <label className="text-xl font-bold mb-4">{label}</label>
       {children}
     </div>
     
