@@ -1,3 +1,5 @@
+"use client"
+import { useState } from 'react';
 import FilterField from './FilterField'
 import InputRange from './InputRange'
 import Select from './Select'
@@ -5,12 +7,20 @@ import Select from './Select'
 import { MOCK_OPTIONS } from '../mock/mocks';
 
 function FilterSection() {
+
+  const [maxCaloriesValue, setMaxCaloriesValue] = useState(0);
+  const [kindsOfDish, setKindsOfDish] = useState([]);
+
+  const handleSubmit = () => {
+    console.log('Handling submit')
+  }
+
   return (
     <aside className="max-w-xs">
-      <form>
         // Filtro de calorías máximas
+      <form onSubmit={handleSubmit}>  
         <FilterField label="Calorías máximas">
-          <InputRange />
+          <InputRange value={maxCaloriesValue} handleValue={setMaxCaloriesValue}/>
         </FilterField>
 
         // Filtro de tipo de plato

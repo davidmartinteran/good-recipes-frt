@@ -1,13 +1,13 @@
 import { NextResponse } from 'next/server'
 
 export function GET() {
-  return NextResponse.json('Obteniendo un producto')
+    return NextResponse.json('Obteniendo un producto')
 }
 
 export function DELETE() {
-  return NextResponse.json('Eliminando producto')
+    return NextResponse.json('Borrando producto')
 }
 
 export function PUT() {
-  return NextResponse.json('Modificando producto')
+    return NextResponse.json('Editando producto')
 }
